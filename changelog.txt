@@ -1,0 +1,19 @@
+[B]v1.1.0[/B]
+- IMDb-based search engine option (with secondary language support)
+- OMDB API integration for Rotten Tomatoes and MetaCritic ratings
+- RT Consensus as plot/outline source
+- OFDb.de (German) plot source
+- IMDb genres, studio, country, tagline scraping
+- IMDb full credits page support (IMDbFull credits source)
+- IMDb certification by country (44 countries)
+- All rating types: IMDb, TMDb, Rotten Tomatoes (4 types), MetaCritic
+- Dual OMDB API key support (outline + ratings)
+
+[B]v1.0.0[/B]
+- Initial Python rewrite of Universal Movie Scraper
+- Multi-source support: TMDb, IMDb, fanart.tv
+- Configurable per-field source selection
+- Artwork from TMDb and fanart.tv
+- Collection/set support
+- IMDb Top250 ranking
+- Trailer support from TMDb

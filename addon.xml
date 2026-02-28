@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addon id="metadata.universal.python"
+       name="Universal Movie Scraper Python"
+       version="1.1.0"
+       provider-name="Beam, Olympia, Team Kodi">
+  <requires>
+    <import addon="xbmc.python" version="3.0.0"/>
+    <import addon="xbmc.metadata" version="2.1.0"/>
+  </requires>
+  <extension point="xbmc.metadata.scraper.movies"
+             library="main.py"/>
+  <extension point="xbmc.addon.metadata">
+    <reuselanguageinvoker>true</reuselanguageinvoker>
+    <news>v1.1.0
+- IMDb search engine, OMDB RT/MC ratings, OFDb.de plot
+- IMDb genres, studio, country, tagline, full credits, certification by country
+v1.0.0
+- Initial Python rewrite of Universal Movie Scraper
+- Multi-source support: TMDb, IMDb, fanart.tv
+- Configurable per-field source selection
+- Artwork from TMDb and fanart.tv
+- Collection/set support
+- IMDb Top250 ranking
+    </news>
+    <platform>all</platform>
+    <license>GPL-2.0-or-later</license>
+    <forum>https://forum.kodi.tv/showthread.php?tid=129821</forum>
+    <assets>
+        <icon>resources/icon.png</icon>
+    </assets>
+    <summary lang="af_ZA">Universele Fliek Skraper (Python)</summary>
+    <summary lang="be_BY">Універсальны сродак атрымання звестак пра фільмы (Python)</summary>
+    <summary lang="bg_BG">Универсален източник на инф. за филми (Python)</summary>
+    <summary lang="ca_ES">Raspador Universal de Pel·lícules (Python)</summary>
+    <summary lang="cs_CZ">Univerzální zdroj dat k filmům (Python)</summary>
+    <summary lang="da_DK">Universal film-scraper (Python)</summary>
+    <summary lang="de_DE">Universeller Film-Scraper (Python)</summary>
+    <summary lang="el_GR">Universal Scraper Ταινιών (Python)</summary>
+    <summary lang="en_GB">Universal Movie Scraper (Python)</summary>
+    <summary lang="en_NZ">Universal Movie Scraper (Python)</summary>
+    <summary lang="en_US">Universal Movie Scraper (Python)</summary>
+    <summary lang="es_AR">Buscador Universal de Películas (Python)</summary>
+    <summary lang="es_ES">Scraper universal de películas (Python)</summary>
+    <summary lang="es_MX">Scraper Universal de Películas (Python)</summary>
+    <summary lang="fi_FI">Universaali tietolähde elokuville (Python)</summary>
+    <summary lang="fr_CA">Extracteur universel pour les films (Python)</summary>
+    <summary lang="fr_FR">Collecteur universel d&apos;informations de films (Python)</summary>
+    <summary lang="hr_HR">Universal sakupljač za filmove (Python)</summary>
+    <summary lang="hu_HU">Univerzális film adat leolvasó (Python)</summary>
+    <summary lang="it_IT">Scraper universale per film (Python)</summary>
+    <summary lang="ja_JP">万能映画スクレーパー (Python)</summary>
+    <summary lang="ko_KR">Universal 영화 정보수집기 (Python)</summary>
+    <summary lang="nl_NL">Universele filmscraper (Python)</summary>
+    <summary lang="pl_PL">Universal Movie Scraper (Python)</summary>
+    <summary lang="pt_BR">Scraper de Filmes Universal (Python)</summary>
+    <summary lang="ru_RU">Универсальный скрапер фильмов (Python)</summary>
+    <summary lang="sk_SK">Univerzálny sťahovač pre filmy (Python)</summary>
+    <summary lang="sv_SE">Universell filmskrapa (Python)</summary>
+    <summary lang="tr_TR">Evrensel Film Bilgi Sağlayıcısı (Python)</summary>
+    <summary lang="uk_UA">Універсальний екстрактор для фільмів (Python)</summary>
+    <summary lang="zh_CN">通用电影刮削器 (Python)</summary>
+    <summary lang="zh_TW">通用的電影資訊搜括器 (Python)</summary>
+    <description lang="en_GB">Universal Scraper is the most customizable movie scraper, collecting information from TMDb and IMDb. It can be set field by field from which site you want specific information. Python rewrite of the classic Universal Movie Scraper.</description>
+    <description lang="en_US">Universal Scraper is the most customizable movie scraper, collecting information from TMDb and IMDb. It can be set field by field from which site you want specific information. Python rewrite of the classic Universal Movie Scraper.</description>
+    <description lang="cs_CZ">Univerzální zdroj dat, který získává informace z podporovaných stránek: TMDb, IMDb, fanart.tv. Provádí základní hledání na TMDb, ale pro každou hodnotu může být upraveno, ze které stránky chcete specifickou informaci získat. Python přepis klasického Universal Movie Scraperu.</description>
+    <description lang="de_DE">Universal Scraper ist der Scraper mit den meisten Anpassungsoptionen, der Metadaten von TMDb und IMDb laden kann. Für jedes Feld kann individuell ausgewählt werden, woher die Informationen bezogen werden sollen. Python-Neuimplementierung des klassischen Universal Movie Scrapers.</description>
+    <description lang="pl_PL">Universal Scraper jest ekstraktorem o największych możliwościach personalizacji, zbierając informacje z TMDb i IMDb. Poszczególne pola mogą być wypełniane informacjami z różnych serwisów. Przepisany w Pythonie klasyczny Universal Movie Scraper.</description>
+    <description lang="fr_FR">Ce scraper collecte les informations depuis TMDb et IMDb. Vous pouvez indiquer les sites sources des champs un par un. Réécriture Python du scraper universel classique.</description>
+    <description lang="ru_RU">Универсальный скрапер собирает информацию с TMDb и IMDb. Можно настроить, с какого сайта получать конкретную информацию для каждого поля. Python-версия классического Universal Movie Scraper.</description>
+  </extension>
+</addon>
