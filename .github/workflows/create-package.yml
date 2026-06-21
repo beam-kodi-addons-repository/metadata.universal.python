@@ -8,7 +8,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Set up Ruby 2.6
-        uses: actions/setup-ruby@v1
+        uses: ruby/setup-ruby@v1
         with:
           ruby-version: 2.6
       - name: Fetch Repository Managment
@@ -17,7 +17,7 @@ jobs:
         run: bundle install
         working-directory: repository-managment
       - name: Pull source
-        uses: actions/checkout@v2
+        uses: actions/checkout@v4
         with:
           path: source-code
       - name: Create package
@@ -29,14 +29,9 @@ jobs:
       - name: set environment variable with Kodi version
         run: echo "KODI_VERSION=$(cat source-code/.kodi-version)" >> $GITHUB_ENV
       - name: Upload release zip to Github Releases
-        uses: actions/upload-release-asset@v1
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        uses: softprops/action-gh-release@v1
         with:
-          upload_url: https://uploads.github.com/repos/${{ github.repository }}/releases/${{ env.RELEASE_ID }}/assets{?name,label}
-          asset_path: ./${{ env.RELEASE_FILENAME }}
-          asset_name: ${{ env.RELEASE_FILENAME }}
-          asset_content_type: application/zip
+          files: ./${{ env.RELEASE_FILENAME }}
       - name: Create pull request to kodi repository
         run: repository-managment/update-package-list.rb -e $PKG_TYPE -u $PKG_LST_USER -n $PKG_LST_REPO -t $GITHUB_REF -r ${{ github.repository }} -f ${{ env.RELEASE_FILENAME }} -k ${{ env.KODI_VERSION }}
         env:
